@@ -1,17 +1,13 @@
-# Cours React — starters des exercices
+# Chapitre 1 — JSX, props et composition
 
-Ce dépôt contient les projets de départ destinés aux exercices du cours React de Cherif Diouf. Le chapitre 0 est une mise en route sans batterie d’exercices ; les premiers exercices commencent au chapitre 1.
+Les starters sont rangés par code d’exercice. Le premier chiffre du code indique le chapitre, le deuxième la difficulté, le troisième l’absence ou la présence de notions externes, et les chiffres restants le numéro de séquence.
 
-## Utiliser un starter
+| Code | Niveau | Sujet | Durée |
+|---|---:|---|---:|
+| 1101 | 1 — Découverte | Réparer la syntaxe JSX | 12 min |
+| 1102 | 1 — Découverte | Expressions et ternaire dans JSX | 15 min |
+| 1201 | 2 — Application | Props et carte produit réutilisable | 20 min |
+| 1202 | 2 — Application | Valeur par défaut et props en lecture seule | 20 min |
+| 1301 | 3 — Consolidation | Composition d’une équipe | 35 min |
 
-Clone la branche avec git clone --branch chapitre-1/enonce --single-branch https://github.com/Maximus203/cours-react.git, puis ouvre chapitre-1/exercices/1101 et exécute npm ci et npm run dev.
-
-Chaque dossier d’exercice possède son README, son projet Vite minimal et les seuls fichiers utiles à la tâche. Les énoncés détaillés sont remis séparément en document Word.
-
-## Numérotation
-
-Pour les chapitres à un chiffre : 1er chiffre = chapitre, 2e = difficulté (1 à 5), 3e = concepts externes (0 non, 1 oui), 4e et suivants = numéro de séquence. Ici, les codes 1101 à 1301 sont tous sans concept externe.
-
-## Aide par IA
-
-Certains fichiers contiennent un commentaire demandant à l’assistant de code de guider sans écrire la solution. C’est une consigne pédagogique, pas une protection technique. L’étudiant reste responsable de comprendre et tester le code.
+Tous les projets utilisent React, JSX et les habitudes de projet Vite déjà installées au chapitre 0. Aucun paquet complémentaire n’est ajouté.

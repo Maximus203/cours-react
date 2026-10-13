@@ -1,0 +1,22 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #21164f;
+  background: #f7f6fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+main { width: min(920px, calc(100% - 32px)); margin: 48px auto; }
+h1 { margin-top: 0; }
+.grille { display: flex; flex-wrap: wrap; gap: 16px; }
+.carte, .carte-produit, .carte-categorie {
+  width: 260px; padding: 20px; border: 1px solid #ded9ef; border-radius: 14px;
+  background: white; box-shadow: 0 5px 16px #21164f12;
+}
+.carte h2, .carte-produit h2, .carte-categorie h2 { margin: 0 0 8px; }
+.nom-produit { font-weight: 700; }
+.prix-produit { color: #8a6d1f; }
+.portrait { width: 84px; height: 84px; display: grid; place-items: center; border-radius: 50%; background: #e7e1f7; }
+label { display: block; margin: 16px 0 6px; }
