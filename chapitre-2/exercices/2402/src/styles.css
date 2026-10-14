@@ -1,0 +1,9 @@
+:root { font-family: Arial, sans-serif; color: #21164f; background: #f7f6fb; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+main { width: min(900px, calc(100% - 32px)); margin: 48px auto; }
+.grille { display: flex; flex-wrap: wrap; gap: 16px; }
+.carte { width: 280px; padding: 20px; border: 1px solid #ded9ef; border-radius: 14px; background: white; box-shadow: 0 5px 16px #21164f12; }
+.carte h2 { margin: 0 0 8px; }
+button { margin-top: 12px; padding: 9px 14px; border: 0; border-radius: 8px; background: #5636b5; color: white; cursor: pointer; }
+.info { font-weight: 700; }
