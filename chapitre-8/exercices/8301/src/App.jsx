@@ -1,13 +1,20 @@
-import { useState } from 'react';
-// Exercice individuel 8301 : demande un indice ciblé si nécessaire ; explique ensuite le comportement que tu as écrit.
+// Exercice individuel 8301 : auditer cet exemple volontairement vulnérable.
 export default function App() {
+  const reponseFictive = '<strong>Réponse simulée</strong>';
   return (
     <main>
       <h1>Audite la réponse avant affichage</h1>
       <p className="muted">React et l’IA</p>
-      {/* TODO(8301) : appeler uniquement /api/assistant ; aucune clé ne doit être lue ici */}
-      <form><label htmlFor="question">Question fictive</label><textarea id="question" /><button>Envoyer</button></form>
-      <p role="status">Prêt</p><pre></pre>
+      <p>Deux défauts sont volontairement présents dans cet exemple. Identifie-les avant de proposer un correctif.</p>
+      {/* TODO(8301) : remplace le rendu HTML dangereux par du texte React et associe un label au champ. */}
+      <form>
+        <textarea placeholder="Votre question" />
+        <button type="button">Analyser</button>
+      </form>
+      <section className="panel" aria-label="Réponse simulée">
+        <h2>Réponse reçue</h2>
+        <div dangerouslySetInnerHTML={{ __html: reponseFictive }} />
+      </section>
     </main>
   );
 }
