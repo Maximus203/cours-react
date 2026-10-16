@@ -9,6 +9,6 @@ Projet de départ pour l’exercice du chapitre 9. L’énoncé détaillé est r
 3. Travaille dans les fichiers `src/` indiqués par les commentaires `TODO(9402)`.
 4. Vérifie le résultat dans le navigateur et lis la console avant de terminer.
 
-Teste états vide et erreur, route profonde, clavier et affichage étroit dans la build prévisualisée. Consigne les résultats dans `LIVRAISON.md`.
+Le starter propose un catalogue SenShop fictif, une recherche avec état vide (« absent ») et erreur (« erreur »), une route profonde `/produits/:produitId` et une fiche détaillée. Teste ces parcours, le clavier et l’affichage étroit dans la build prévisualisée, puis consigne les résultats dans `LIVRAISON.md`.
 
 Le commentaire de travail invite à demander un indice ciblé ; il ne bloque pas techniquement un assistant. Tu restes responsable d’expliquer et de tester le code que tu écris.
