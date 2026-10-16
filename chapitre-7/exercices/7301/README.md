@@ -9,6 +9,6 @@ Projet de départ pour l’exercice du chapitre 7. L’énoncé détaillé est r
 3. Travaille dans les fichiers `src/` indiqués par les commentaires `TODO(7301)`.
 4. Vérifie le résultat dans le navigateur et lis la console avant de terminer.
 
-Exécute d’abord le test avec l’implémentation initiale, observe l’échec, puis corrige le comportement. Le test ne doit pas contourner l’interface utilisateur.
+Le test fourni échoue volontairement au départ : il clique sur « Ajouter au panier » et attend le libellé « Ajouté au panier ». Exécute-le, corrige le comportement dans l’interface, puis vérifie qu’il passe sans contourner l’interface utilisateur.
 
 Le commentaire de travail invite à demander un indice ciblé ; il ne bloque pas techniquement un assistant. Tu restes responsable d’expliquer et de tester le code que tu écris.

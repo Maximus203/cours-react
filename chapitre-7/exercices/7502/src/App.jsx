@@ -4,8 +4,9 @@ export default function App() {
     <main>
       <h1>Audit qualité et performance</h1>
       <p className="muted">Qualité : tests et performance</p>
-      {/* TODO(7502) : ajoute tests de comportement et consigne une mesure avant/après */}
+      {/* TODO(7502) : ajoute un test de comportement, profile la liste avant/après et consigne ton choix d’optimisation. */}
       <button>Ajouter au panier</button><label htmlFor="q">Rechercher</label><input id="q" />
+      <ul>{Array.from({ length: 120 }, (_, index) => <li key={index}>Profil {index + 1}</li>)}</ul>
     </main>
   );
 }

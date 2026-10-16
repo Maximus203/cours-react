@@ -4,11 +4,10 @@ import userEvent from '@testing-library/user-event';
 import App from './App.jsx';
 
 describe('Le test casse avant le correctif', () => {
-  it('TODO(7301) : vérifie un comportement visible par une personne', async () => {
+  it('ajoute au panier après le clic', async () => {
     const user = userEvent.setup();
     render(<App />);
-    // TODO(7301) : trouver l’élément par rôle/label, effectuer l’action puis vérifier le résultat
-    expect(screen.getByRole('heading', { name: 'Le test casse avant le correctif' })).toBeInTheDocument();
-    void user;
+    await user.click(screen.getByRole('button', { name: 'Ajouter au panier' }));
+    expect(screen.getByRole('button', { name: 'Ajouté au panier' })).toBeInTheDocument();
   });
 });

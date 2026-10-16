@@ -4,7 +4,7 @@ export default function App() {
     <main>
       <h1>Profile avant de mémoïser</h1>
       <p className="muted">Qualité : tests et performance</p>
-      {/* TODO(7402) : tester résultat, absence et erreur avec des rôles accessibles */}
+      {/* TODO(7402) : profile ce rendu de liste avant toute mémoïsation et ne l’ajoute que si la mesure le justifie. */}
       <label htmlFor="q">Rechercher</label><input id="q" /><ul></ul><p role="alert"></p>
     </main>
   );
