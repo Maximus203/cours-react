@@ -9,7 +9,7 @@ Projet de départ pour l’exercice du chapitre 8. L’énoncé détaillé est r
 3. Travaille dans les fichiers `src/` indiqués par les commentaires `TODO(8301)`.
 4. Vérifie le résultat dans le navigateur et lis la console avant de terminer.
 
-Le composant fourni contient volontairement une injection HTML via `dangerouslySetInnerHTML` et un champ sans label. Repère les deux défauts, décris un rendu textuel plus sûr et propose un test qui vérifie l’accessibilité du champ.
+Corrige les deux défauts dans `src/App.jsx` : affiche la réponse simulée comme du texte React au lieu de `dangerouslySetInnerHTML`, puis associe un label au champ. Propose un test accessible qui vérifie ce label et confirme que le contenu est rendu comme du texte ordinaire.
 
 Le commentaire de travail invite à demander un indice ciblé ; il ne bloque pas techniquement un assistant. Tu restes responsable d’expliquer et de tester le code que tu écris.
 
