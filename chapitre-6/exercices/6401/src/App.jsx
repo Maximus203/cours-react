@@ -1,13 +1,26 @@
 import { useState } from 'react';
-// Exercice individuel 6401 : demande un indice ciblé si nécessaire ; explique ensuite le comportement que tu as écrit.
+
+function Salutation({ langue }) {
+  return <p>{langue === 'fr' ? 'Bonjour' : 'Hello'} !</p>;
+}
+
+function Panneau({ langue }) {
+  return <section className="panel"><h2>Profil</h2><Salutation langue={langue} /></section>;
+}
+
+function Page({ langue }) {
+  return <Panneau langue={langue} />;
+}
+
 export default function App() {
+  const [langue, setLangue] = useState('fr');
   return (
     <main>
       <h1>Réduis les props relais</h1>
       <p className="muted">État partagé : contexte et hooks personnalisés</p>
-      {/* TODO(6401) : déplacer l’appel du hook hors de la condition */}
-      <p>Le composant reçoit afficherCompteur={false}.</p>
-      <button>Basculer le compteur</button>
+      {/* TODO(6401) : remplace la chaîne de props relais par un provider de langue ; garde menu et salutation synchronisés. */}
+      <button onClick={() => setLangue((valeur) => valeur === 'fr' ? 'en' : 'fr')}>Changer la langue</button>
+      <Page langue={langue} />
     </main>
   );
 }

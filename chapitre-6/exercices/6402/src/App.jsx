@@ -5,8 +5,8 @@ export default function App() {
     <main>
       <h1>Emballe une logique de favori</h1>
       <p className="muted">État partagé : contexte et hooks personnalisés</p>
-      {/* TODO(6402) : fournir une session fictive par contexte, sans prop relais */}
-      <header><p>Session : visiteur</p></header><section><h2>Profil</h2><p>Nom : visiteur</p></section>
+      {/* TODO(6402) : crée useFavori pour deux cartes ; chaque appel doit conserver son propre état. */}
+      <div className="list"><article><h2>Atelier React</h2><button>Ajouter aux favoris</button></article><article><h2>Atelier CSS</h2><button>Ajouter aux favoris</button></article></div>
     </main>
   );
 }
