@@ -1,12 +1,27 @@
-import { useState } from 'react';
-// Exercice individuel 6301 : demande un indice ciblé si nécessaire ; explique ensuite le comportement que tu as écrit.
+import { createContext, useContext } from 'react';
+
+const SessionContext = createContext(null);
+const utilisateur = { prenom: 'Aïssatou', role: 'Étudiante' };
+
+function Entete() {
+  const session = useContext(SessionContext);
+  return <header><h2>Atelier React</h2><p>Connectée : {session.prenom}</p></header>;
+}
+
+function Profil() {
+  const session = useContext(SessionContext);
+  return <section className="panel"><h2>Profil</h2><p>Nom : {session.prenom}</p><p>Rôle : {session.role}</p></section>;
+}
+
 export default function App() {
   return (
-    <main>
-      <h1>Partage une session de démonstration</h1>
-      <p className="muted">État partagé : contexte et hooks personnalisés</p>
-      {/* TODO(6301) : créer un contexte, son provider puis lire le thème dans un descendant */}
-      <section className="panel"><h2>Préférences</h2><p>Thème : clair</p><button>Changer le thème</button></section>
-    </main>
+    <SessionContext.Provider value={utilisateur}>
+      <main>
+        <h1>Partage une session de démonstration</h1>
+        <p className="muted">Un même utilisateur fictif est lu dans deux composants descendants.</p>
+        <Entete />
+        <Profil />
+      </main>
+    </SessionContext.Provider>
   );
 }
