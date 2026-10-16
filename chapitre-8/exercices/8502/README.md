@@ -9,7 +9,7 @@ Projet de départ pour l’exercice du chapitre 8. L’énoncé détaillé est r
 3. Travaille dans les fichiers `src/` indiqués par les commentaires `TODO(8502)`.
 4. Vérifie le résultat dans le navigateur et lis la console avant de terminer.
 
-Passe en revue un composant proposé par un assistant : comportement, hooks, accessibilité, sécurité, dépendances. Ajoute un test qui reproduit un défaut avant de le corriger.
+Passe en revue la proposition de composant affichée dans l’application : comportement, règles des hooks, accessibilité et sécurité du rendu. Ajoute d’abord un test qui reproduit un défaut, puis propose une correction et vérifie le résultat. Le code affiché est un exemple fictif, pas un fichier de production.
 
 Le commentaire de travail invite à demander un indice ciblé ; il ne bloque pas techniquement un assistant. Tu restes responsable d’expliquer et de tester le code que tu écris.
 

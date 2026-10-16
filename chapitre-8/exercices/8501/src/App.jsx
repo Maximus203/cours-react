@@ -4,8 +4,8 @@ export default function App() {
     <main>
       <h1>Intègre un assistant simulé</h1>
       <p className="muted">React et l’IA</p>
-      {/* TODO(8501) : rendre la réponse comme texte ; auditer label, limite et erreur */}
-      <label htmlFor="q">Question</label><textarea id="q" /><button>Envoyer</button><div className="response"></div>
+      {/* TODO(8501) : réalise le parcours complet avec le relais local : saisie, envoi, affichage des morceaux, annulation et nouvelle tentative. */}
+      <label htmlFor="q">Question de démonstration</label><textarea id="q" /><button type="button">Envoyer</button><button type="button">Annuler</button><div className="response" aria-live="polite"></div>
     </main>
   );
 }

@@ -4,7 +4,7 @@ export default function App() {
     <main>
       <h1>Teste attente, flux et erreur</h1>
       <p className="muted">React et l’IA</p>
-      {/* TODO(8402) : lire le flux selon le contrat SSE et décoder les morceaux */}
+      {/* TODO(8402) : écris des tests pour attente, morceaux reçus, fin, erreur et annulation en simulant les réponses réseau. */}
       <button>Lire la réponse de démonstration</button><pre aria-live="polite"></pre>
     </main>
   );
