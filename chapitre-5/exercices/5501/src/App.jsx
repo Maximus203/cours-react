@@ -1,0 +1,15 @@
+import { createBrowserRouter } from 'react-router';
+import { RouterProvider } from 'react-router/dom';
+import './styles.css';
+function Accueil(){ return (<main><h1>Construis un parcours multi-pages</h1>      {/* TODO(5501) : créer route index, layout et fiches imbriquées */}
+      <nav><a href="/ateliers">Tous les ateliers</a></nav>
+      <ul><li>React pour débuter</li><li>Composants accessibles</li></ul><p><a href="/ateliers">Ouvrir les ateliers</a></p></main>); }
+function Ateliers(){ return <main><h1>Ateliers</h1><p>Liste de démonstration à compléter.</p></main>; }
+function Inconnu(){ return <main><h1>Page introuvable</h1><p>Vérifie l’URL demandée.</p></main>; }
+const routeur = createBrowserRouter([
+  { path:'/', element:<Accueil /> },
+  { path:'/ateliers', element:<Ateliers /> },
+  // TODO(5501) : ajouter le segment dynamique ou la route imbriquée demandée
+  { path:'*', element:<Inconnu /> },
+]);
+export default function App(){ return <RouterProvider router={routeur} />; }
