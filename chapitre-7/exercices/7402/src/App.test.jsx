@@ -4,11 +4,14 @@ import userEvent from '@testing-library/user-event';
 import App from './App.jsx';
 
 describe('Profile avant de mémoïser', () => {
-  it('TODO(7402) : vérifie un comportement visible par une personne', async () => {
+  it('filtre les ateliers selon le texte saisi', async () => {
     const user = userEvent.setup();
     render(<App />);
-    // TODO(7402) : trouver l’élément par rôle/label, effectuer l’action puis vérifier le résultat
-    expect(screen.getByRole('heading', { name: 'Profile avant de mémoïser' })).toBeInTheDocument();
-    void user;
+
+    expect(screen.getByRole('list', { name: 'Ateliers disponibles' })).toBeInTheDocument();
+    await user.type(screen.getByRole('textbox', { name: 'Filtrer les ateliers' }), 'formulaires');
+
+    expect(screen.getByText('Formulaires contrôlés — groupe 1')).toBeInTheDocument();
+    expect(screen.queryByText('JavaScript pour le navigateur — groupe 1')).not.toBeInTheDocument();
   });
 });

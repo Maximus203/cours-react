@@ -9,6 +9,6 @@ Projet de départ pour l’exercice du chapitre 7. L’énoncé détaillé est r
 3. Travaille dans les fichiers `src/` indiqués par les commentaires `TODO(7402)`.
 4. Vérifie le résultat dans le navigateur et lis la console avant de terminer.
 
-Lance le build et mesure le composant de liste fourni avant toute optimisation. Identifie le composant coûteux et ne propose une mémoïsation que si la mesure le justifie.
+Exécute les tests et le build, puis profile `ListeProfils` avant toute optimisation. Consigne dans `DECISIONS.md` les conditions de mesure, le résultat observé et ton choix. N’ajoute une mémoïsation que si une mesure démontre qu’elle améliore réellement le rendu.
 
 Le commentaire de travail invite à demander un indice ciblé ; il ne bloque pas techniquement un assistant. Tu restes responsable d’expliquer et de tester le code que tu écris.
