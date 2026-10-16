@@ -1,0 +1,3 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+export default defineConfig({ plugins: [react(), { name:'demo-assistant-local', configureServer(server) { server.middlewares.use('/api/assistant', (req,res) => { res.statusCode=200; res.setHeader('Content-Type','text/event-stream; charset=utf-8'); res.setHeader('Cache-Control','no-cache'); const parts=['Réponse',' fictive',' sans',' fournisseur',' réel.']; let i=0; const timer=setInterval(()=>{ if(i===parts.length){ clearInterval(timer); res.end('data: [DONE]\n\n'); return; } res.write('data: '+JSON.stringify({text:parts[i++]})+'\n\n'); },120); res.on('close',()=>clearInterval(timer)); }); } }] });
