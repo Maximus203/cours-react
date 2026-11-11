@@ -7,11 +7,23 @@ export default function App() {
   const restantes = capacite - reservations;
 
   function reserver() {
-    // TODO(2502) : mise à jour fonctionnelle avec limite haute
+    setReservations(previous => {
+    if (previous >= capacite) {
+      return previous;
+    }
+
+    return previous + 1;
+  });
   }
 
   function annuler() {
-    // TODO(2502) : mise à jour fonctionnelle avec limite basse
+    setReservations(previous => {
+    if (previous <= 0) {
+      return previous;
+    }
+
+    return previous - 1;
+  });
   }
 
   return (
